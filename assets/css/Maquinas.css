@@ -85,21 +85,6 @@ header {
     text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.795);
 }
 
-@media (max-width: 768px) {
-    #Conteudo-header {
-        flex-direction: row;
-        height: 400px;
-    }
-
-    #fundo-conteudo {
-        padding: 10px;
-    }
-
-    #fundo-conteudo > h1 {
-        font-size: 32px;
-    }
-}
-
 #Links-header {
     display: flex;
     flex-flow: row wrap;
@@ -132,4 +117,35 @@ header {
     font-weight: bold;
     color: black;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #Conteudo-header {
+        flex-direction: row;
+        height: 400px;
+    }
+
+    #fundo-conteudo {
+        padding: 10px;
+    }
+
+    #fundo-conteudo > h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 790px) {
+    #Navegação {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #Menu-Header {
+        display: flex;
+        flex-flow:  column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 10px 56px 10px;;
+    }
 }
