@@ -4,7 +4,7 @@
 @media (max-width: 768px) {
     #Conteudo-header {
         flex-direction: row;
-        height: 400px;
+        height: 550px;
     }
 
     #fundo-conteudo > h1 {
@@ -53,5 +53,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 375px) {
+    #Menu-Header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 59px 56px 10px;
     }
 }
