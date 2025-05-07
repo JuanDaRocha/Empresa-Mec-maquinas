@@ -38,7 +38,7 @@
         left: 0;
         width: 60vw;
         height: 100vh;
-        background-color: #0b0b0b;
+        background-color: #1f1f1fea;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

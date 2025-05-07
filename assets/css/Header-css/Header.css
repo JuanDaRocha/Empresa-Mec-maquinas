@@ -2,17 +2,20 @@
 header {
     width: 100%;
     height: 954px;
-    padding: 10px;
+    padding: 0px;
     background: radial-gradient(circle at center, #2B2B2B 0%, #000000 100%);
 }
 
 /* Menu principal */
 #Menu-Header {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* mantém logo à esquerda e menu à direita */
     align-items: center;
-    margin: 15px 75px 56px 10px;
+    position: fixed;
+    width: 100%;
+    padding: 10px 40px;
+    z-index: 1000;
+    transition: background-color 0.4s ease;
 }
 
 /* Logo */
@@ -23,13 +26,30 @@ header {
 }
 
 /* Navegação */
+
+#Navegação-global {
+    display: flex;
+    justify-content: flex-end; /* joga a navegação pro lado direito */
+    align-items: center;
+    gap: 30px;
+}
+
+#Navegação {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+
 #Navegação > a {
     font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    margin: 1px 35px 1px 1px;
+    margin: 1px 1px 1px 1px;
     transition: color 0.5s;
+    white-space: nowrap;
+    flex-shrink: 0; /* evita que os links sejam comprimidos */
 }
 
 #Navegação > a:hover {
@@ -62,6 +82,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 150px;
 }
 
 /* Conteúdo do header */
@@ -69,7 +90,7 @@ header {
     width: 80%;
     height: 650px;
     border-radius: 20px;
-    background: url("../imagens/TratorDopaidoAbreu.png") no-repeat center left;
+    background: url("../../imagens/TratorDopaidoAbreu.png") no-repeat center left;
     background-size: cover;
     display: flex;
     justify-content: left;
