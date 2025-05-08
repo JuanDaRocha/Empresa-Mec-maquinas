@@ -26,7 +26,6 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        margin: 15px 10px 56px 10px;
     }
 }
 
@@ -42,7 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        transform: translateX(-100%);
+        transform: translateX(-150%);
         transition: transform 0.3s ease;
         font-size: 20px;
         z-index: 1000;
@@ -62,6 +61,6 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        margin: 15px 59px 56px 10px;
+        margin: 0px 55px 10px 0px;
     }
 }

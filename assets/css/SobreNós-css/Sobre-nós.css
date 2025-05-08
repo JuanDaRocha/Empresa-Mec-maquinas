@@ -1,6 +1,6 @@
 #Sobre-Nós {
     width: 100%;
-    height: 864px;
+    height: 1250px;
     margin-top: 200px;
 }
 
@@ -12,6 +12,7 @@
 }
 
 .Sobre-convite {
+
     width: 200px;
     height: 584px;
 }
@@ -91,4 +92,36 @@
     background-image: url('../../imagens/Garagem-do-Abreu.jpg'); /* Substitua pelo caminho da imagem */
     background-attachment: fixed;
     background-size: cover;
+}
+
+@media (max-width: 946px) {
+    #Sobre-Flex {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .Sobre-convite {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #convite-Flex {
+        justify-content: flex-start;
+    }
+
+    #convite-Flex > div > p {
+        font-size: 20px;
+    }
+
+    .Sobre-apresentação {
+        width: 100%;
+    }
+
+    .Ajustes {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
 }

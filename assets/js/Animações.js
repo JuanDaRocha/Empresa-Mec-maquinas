@@ -6,7 +6,7 @@ function toggleMenu() {
     menuToggle.classList.toggle("active");
 
     if (itens.style.transform === 'translateX(0%)') {
-        itens.style.transform = 'translateX(-100%)';  // Esconde à esquerda
+        itens.style.transform = 'translateX(-150%)';  // Esconde à esquerda
     } else {
         itens.style.transform = 'translateX(0%)';  // Mostra o menu
     }
