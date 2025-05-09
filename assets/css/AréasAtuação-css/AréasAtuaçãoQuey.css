@@ -1,0 +1,18 @@
+@media (max-width: 770px) {
+    #Atuação-Apresentação {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Áreas-titulo > h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 415px) {
+    #Atuação-Apresentação {
+        max-width: 300px;
+        padding-left: 10px;
+    }
+}
