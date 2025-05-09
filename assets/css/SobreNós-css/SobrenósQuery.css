@@ -28,11 +28,25 @@
         height: auto;
         margin-bottom: 15px;
     }
+
+    #Ajuste-paralax {
+        margin-top: 50px;
+    }
 }
 
-@media (max-width: 415px) {
-    #Áreas-titulo > h2 {
-        font-size: 20px;
-        padding-left: 10px;
+@media (max-width: 946px) {
+    #Ajuste-paralax {
+        margin-top: 50px;
     }
+}
+
+@media (max-width: 480px) {
+    #fundo-conteudo {
+        padding:  1px 0px 0px 10px;
+    }
+
+    #Sobre-Nós {
+        padding-bottom: 900;
+    }
+
 }
