@@ -1,4 +1,12 @@
+@media (max-width: 775px) {
+    #Aréas-Atuação {
+        height: 1500px;
+    }
+}
+
 @media (max-width: 770px) {
+  
+
     #Atuação-Apresentação {
         display: flex;
         justify-content: center;
@@ -10,7 +18,7 @@
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 442px) {
     #Atuação-Apresentação {
         max-width: 300px;
         padding-left: 10px;

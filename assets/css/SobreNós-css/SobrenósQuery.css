@@ -35,8 +35,14 @@
 }
 
 @media (max-width: 946px) {
-    #Ajuste-paralax {
-        margin-top: 50px;
+    #Sobre-Nós {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 512px) {
+        #Ajuste-paralax {
+        margin-bottom: 100px;
     }
 }
 
@@ -49,4 +55,10 @@
         padding-bottom: 900;
     }
 
+}
+
+@media (max-width: 442px) {
+    #Atuação-Apresentação {
+        max-width: 250px;
+    }
 }
