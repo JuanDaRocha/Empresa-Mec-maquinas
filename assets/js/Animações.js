@@ -1,3 +1,4 @@
+//Animação do menu aparecendo
 function toggleMenu() {
     const menuToggle = document.getElementById("menu-toggle");
     const itens = document.getElementById("Navegação");
@@ -12,6 +13,8 @@ function toggleMenu() {
     }
 }
 
+
+//Mudança de cor quando o menu desce 
 window.onscroll = function() {changeMenuColor()};
 
 function changeMenuColor() {
