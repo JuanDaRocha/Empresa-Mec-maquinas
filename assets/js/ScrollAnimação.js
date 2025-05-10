@@ -1,6 +1,6 @@
 ScrollReveal().reveal('#Conteudo-header, #Equipe-vindas', {
     origin: 'top',
-    distance: '60px',
+    distance: '100px',
     duration: 1000,
     delay: 200,
     reset: false
