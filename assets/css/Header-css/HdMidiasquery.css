@@ -68,7 +68,7 @@
 @media (max-width: 375px) {
     #Menu-Header {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
         margin: 0px 55px 10px 0px;
