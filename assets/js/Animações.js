@@ -22,7 +22,7 @@ function changeMenuColor() {
 
     // Verifica se o usuário rolou para baixo
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        menu.style.backgroundColor = "#1F1F1F"; // Muda para uma cor mais escura, por exemplo
+        menu.style.backgroundColor = "#030303"; // Muda para uma cor mais escura, por exemplo
     } else {
         menu.style.backgroundColor = "transparent"; // Volta para o fundo transparente
     }

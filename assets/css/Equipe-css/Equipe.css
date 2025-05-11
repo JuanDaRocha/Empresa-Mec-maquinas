@@ -1,6 +1,6 @@
 #Equipe {
     width: 100%;
-    min-height: 100vh;
+    height: 1000px;
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@
 /* Estilo da imagem */
 #Equipe img {
     display: block;
-    margin: 80px 1px 1px 1px;
+    margin: 80px 1px 100px 1px;
     max-width: 100%;
     height: auto;
     border-radius: 15px;
