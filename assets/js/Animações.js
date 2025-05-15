@@ -27,3 +27,29 @@ function changeMenuColor() {
         menu.style.backgroundColor = "transparent"; // Volta para o fundo transparente
     }
 }
+
+const imagensHeader = [
+  "assets/imagens/TratorDopaidoAbreu.png",
+  "assets/imagens/Banner_de_oferta.jpg"
+];
+
+let indexHeader = 0;
+
+function trocarImagemHeader() {
+  const conteudoHeader = document.getElementById("Conteudo-header");
+  if (!conteudoHeader) return;
+
+  // Pra tablet e mobile, fixa só a primeira imagem
+  if (window.innerWidth <= 1024) {
+    conteudoHeader.style.backgroundImage = `url('${imagensHeader[0]}')`;
+    return;
+  }
+
+  conteudoHeader.style.backgroundImage = `url('${imagensHeader[indexHeader]}')`;
+  indexHeader = (indexHeader + 1) % imagensHeader.length;
+}
+
+trocarImagemHeader();
+setInterval(trocarImagemHeader, 5000);
+
+  

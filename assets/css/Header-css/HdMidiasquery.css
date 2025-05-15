@@ -1,6 +1,13 @@
 /* MEDIA QUERIES */
 
 /* Ajuste do conteúdo no mobile */
+
+@media (max-width: 1024px) {
+  #Conteudo-header {
+    background-image: url("../../imagens/TratorDopaidoAbreu.png") !important;
+  }
+}
+
 @media (max-width: 768px) {
     #Conteudo-header {
         flex-direction: row;
