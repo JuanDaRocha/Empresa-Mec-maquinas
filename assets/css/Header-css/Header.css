@@ -2,18 +2,17 @@
 header {
     width: 100%;
     height: 954px;
-    padding: 0px;
     background: radial-gradient(circle at center, #2B2B2B 0%, #000000 100%);
 }
 
 /* Menu principal */
 #Menu-Header {
     display: flex;
-    justify-content: space-between; /* mantém logo à esquerda e menu à direita */
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    padding: 10px 40px;
+    padding: 12px 40px;
     z-index: 1000;
     transition: background-color 0.4s ease;
 }
@@ -23,15 +22,14 @@ header {
     width: 150px;
     height: 65px;
     margin-left: 40px;
-    z-index: 9900; /* Mantém visível sobre o fundo, mas abaixo do texto */
+    z-index: 9900;
     position: relative;
 }
 
 /* Navegação */
-
 #Navegação-global {
     display: flex;
-    justify-content: flex-end; /* joga a navegação pro lado direito */
+    justify-content: flex-end;
     align-items: center;
     gap: 30px;
 }
@@ -42,16 +40,15 @@ header {
     gap: 30px;
 }
 
-
 #Navegação > a {
     font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    margin: 1px 1px 1px 1px;
+    margin: 1px;
     transition: color 0.5s;
     white-space: nowrap;
-    flex-shrink: 0; /* evita que os links sejam comprimidos */
+    flex-shrink: 0;
 }
 
 #Navegação > a:hover {
@@ -89,16 +86,34 @@ header {
     width: 80%;
     height: 650px;
     border-radius: 20px;
-    background: url("../../imagens/TratorDopaidoAbreu.png") no-repeat;
-    background-position: 60%;
-    background-size: cover;
     display: flex;
     justify-content: left;
     align-items: center;
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.425);
     padding: 1px;
+    position: relative;
+    overflow: hidden;
+}
 
-    transition: background-image 1s ease-in-out;
+/* Camadas de imagem para transição */
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.bg-img.visible {
+    opacity: 1;
+    z-index: 2;
 }
 
 /* Texto dentro do conteúdo */
@@ -107,6 +122,7 @@ header {
     padding: 0px 1px 0px 50px;
     color: white;
     border-radius: 10px;
+    z-index: 10;
 }
 
 #fundo-conteudo > h1 {
@@ -142,22 +158,22 @@ header {
 
 #cor-1 {
     background-color: #F6BD36;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
 #cor-1:hover {
     background-color: #c29733;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
 #cor-2 {
     background-color: #f3f3f2;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
 #cor-2:hover {
     background-color: #bdbdbd;
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
 #cor-1 > a,

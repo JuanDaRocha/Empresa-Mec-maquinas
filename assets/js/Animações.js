@@ -34,22 +34,47 @@ const imagensHeader = [
 ];
 
 let indexHeader = 0;
+const conteudoHeader = document.getElementById("Conteudo-header");
+
+function criarCamadaImagem(src, visivel = false) {
+  const div = document.createElement("div");
+  div.classList.add("bg-img");
+  if (visivel) div.classList.add("visible");
+  div.style.backgroundImage = `url('${src}')`;
+  conteudoHeader.appendChild(div);
+  return div;
+}
+
+// Cria as duas camadas de imagem
+const camada1 = criarCamadaImagem(imagensHeader[0], true);
+const camada2 = criarCamadaImagem(imagensHeader[1]);
+
+let camadaAtual = camada1;
+let proximaCamada = camada2;
 
 function trocarImagemHeader() {
-  const conteudoHeader = document.getElementById("Conteudo-header");
   if (!conteudoHeader) return;
 
-  // Pra tablet e mobile, fixa só a primeira imagem
+  // Se for mobile/tablet, fixa a primeira imagem
   if (window.innerWidth <= 1024) {
-    conteudoHeader.style.backgroundImage = `url('${imagensHeader[0]}')`;
+    camada1.style.backgroundImage = `url('${imagensHeader[0]}')`;
+    camada2.style.backgroundImage = `url('${imagensHeader[0]}')`;
+    camada1.classList.add("visible");
+    camada2.classList.remove("visible");
     return;
   }
 
-  conteudoHeader.style.backgroundImage = `url('${imagensHeader[indexHeader]}')`;
+  // Alterna a visibilidade
+  proximaCamada.style.backgroundImage = `url('${imagensHeader[indexHeader]}')`;
+  proximaCamada.classList.add("visible");
+  camadaAtual.classList.remove("visible");
+
+  // Troca as referências para a próxima troca
+  [camadaAtual, proximaCamada] = [proximaCamada, camadaAtual];
+
   indexHeader = (indexHeader + 1) % imagensHeader.length;
 }
 
 trocarImagemHeader();
-setInterval(trocarImagemHeader, 5000);
-
+setInterval(trocarImagemHeader, 3500);
   
