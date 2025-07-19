@@ -2,6 +2,7 @@
 function toggleMenu() {
     const menuToggle = document.getElementById("menu-toggle");
     const itens = document.getElementById("Navegação");
+    const cor = document.getElementById("Menu-Header")
 
     // Alterna o menu hamburguer para X
     menuToggle.classList.toggle("active");
@@ -10,6 +11,7 @@ function toggleMenu() {
         itens.style.transform = 'translateX(-150%)';  // Esconde à esquerda
     } else {
         itens.style.transform = 'translateX(0%)';  // Mostra o menu
+        cor.style.backgroundColor = '#030303'
     }
 }
 
@@ -18,7 +20,7 @@ function toggleMenu() {
 window.onscroll = function() {changeMenuColor()};
 
 function changeMenuColor() {
-    var menu = document.getElementById("Menu-Header");
+    let menu = document.getElementById("Menu-Header");
 
     // Verifica se o usuário rolou para baixo
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {

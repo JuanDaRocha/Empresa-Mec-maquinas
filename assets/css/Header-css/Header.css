@@ -29,14 +29,16 @@ header {
 /* Navegação */
 #Navegação-global {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 #Navegação {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -139,14 +141,15 @@ header {
 }
 
 /* Botões do header */
-#Links-header {
+.Links-header {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
-#cor-1,
-#cor-2 {
+.cor-1,
+.cor-2 {
     width: 140px;
     height: 50px;
     border-radius: 15px;
@@ -156,28 +159,28 @@ header {
     margin: 1px 15px 1px 1px;
 }
 
-#cor-1 {
+.cor-1 {
     background-color: #F6BD36;
     transition: all 0.4s;
 }
 
-#cor-1:hover {
+.cor-1:hover {
     background-color: #c29733;
     transition: all 0.4s;
 }
 
-#cor-2 {
+.cor-2 {
     background-color: #f3f3f2;
     transition: all 0.4s;
 }
 
-#cor-2:hover {
+.cor-2:hover {
     background-color: #bdbdbd;
     transition: all 0.4s;
 }
 
-#cor-1 > a,
-#cor-2 > a {
+.cor-1 > a,
+.cor-2 > a {
     display: flex;
     align-items: center;
     justify-content: center;

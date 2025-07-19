@@ -91,7 +91,8 @@
     width: 82%;
     height: 530px;
     border-radius: 20px;
-    background-image: url('../../imagens/Garagem-do-Abreu.jpg');
+    background-image: url('../../imagens/trator.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: center top;
 }
