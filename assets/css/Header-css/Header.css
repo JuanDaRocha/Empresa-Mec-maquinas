@@ -43,6 +43,7 @@ header {
 }
 
 #Navegação > a {
+    position: relative;
     font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
     color: white;
@@ -53,9 +54,24 @@ header {
     flex-shrink: 0;
 }
 
-#Navegação > a:hover {
-    color: #F6BD36;
-    transition: color 0.5s;
+#Navegação > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #F6BD36;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+#Navegação > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: all 0.3s ease;
 }
 
 /* Botão hamburguer */
@@ -156,7 +172,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1px 15px 1px 1px;
+    margin: 1px 15px 10px 1px;
 }
 
 .cor-1 {

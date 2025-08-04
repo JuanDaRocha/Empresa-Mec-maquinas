@@ -32,7 +32,7 @@ function changeMenuColor() {
 
 const imagensHeader = [
   "assets/imagens/TratorDopaidoAbreu.png",
-  "assets/imagens/Banner_de_oferta.jpg"
+  "assets/imagens/TratorDoRoblokerXD.jpg"
 ];
 
 let indexHeader = 0;
