@@ -15,7 +15,6 @@ function toggleMenu() {
     }
 }
 
-
 //Mudança de cor quando o menu desce 
 window.onscroll = function() {changeMenuColor()};
 

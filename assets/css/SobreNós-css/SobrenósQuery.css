@@ -30,35 +30,69 @@
     }
 
     #Ajuste-paralax {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 }
 
 @media (max-width: 946px) {
     #Sobre-Nós {
-        height: 1500px;
+        height: 1230px;
+    }
+}
+
+@media (max-width: 946px) {
+    #Imagem-paralax {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    #Sobre-Nós {
+        height: 1400px;
     }
 }
 
 @media (max-width: 512px) {
-        #Ajuste-paralax {
+    #Ajuste-paralax {
         margin-bottom: 100px;
     }
-}
+
+    #Sobre-Nós {
+        height: 1600px;
+    }
+} 
 
 @media (max-width: 480px) {
     #fundo-conteudo {
         padding:  1px 0px 0px 10px;
     }
-
+    
     #Sobre-Nós {
         padding-bottom: 900;
     }
 
+    #Imagem-paralax {
+        height: 503px;
+        width: 95%;
+        background-attachment: unset;
+        background-position: 54%;
+    }
 }
 
 @media (max-width: 442px) {
     #Atuação-Apresentação {
         max-width: 250px;
+    }
+}
+
+@media (max-width: 415px) {
+    #Sobre-Nós {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 330px) {
+    #Sobre-Nós {
+        height: 1400px;
     }
 }

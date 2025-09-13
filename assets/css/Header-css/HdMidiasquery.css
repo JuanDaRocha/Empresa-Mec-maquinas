@@ -11,7 +11,7 @@
 @media (max-width: 768px) {
     #Conteudo-header {
         flex-direction: row;
-        height: 550px;
+        height: 650px;
     }
 
     #fundo-conteudo > h1 {
